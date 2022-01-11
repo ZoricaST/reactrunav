@@ -1,7 +1,7 @@
 import React from 'react'
 //import Li from './Li'
 function Polje(props) {
-    return <li>Ja sam{ props.itemli}</li>;
+    return <li>Ja sam { props.itemli}</li>;
   }
 const Lista = (props) => {
     return (
