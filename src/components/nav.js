@@ -2,13 +2,15 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './nav.css';
 
-const nav = () => {
-    return (
-        <div class="topnav">
-  <Link to="/" class="active">Home</Link>
-  <Link to="/page1">Page1</Link>
-  <Link to="/page2">Page2</Link>
 
+const nav = ({tabovi}) => {
+  
+    return (
+        <div className="topnav">
+  <Link to="/" className="active">Home</Link>
+  
+  {tabovi.map((tab) => (<Link to={`/${tab.put}`} key={tab.id}>{tab.ime}</Link>))} 
+  
 </div>
     )
 }
