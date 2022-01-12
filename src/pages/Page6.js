@@ -1,8 +1,9 @@
-
+import React from 'react';
 import Nav from '../components/nav';
 import { useState} from 'react'
 
-const Page1 = () => {
+
+const Page6 = () => {
     const [tabovi,setTabovi] = useState([
         {
         id:2,
@@ -15,15 +16,14 @@ const Page1 = () => {
         ime:'Page3',
         }
         ])
-        
     return (
         <div>
-             <Nav tabovi={tabovi}/>
-            <h1>Ovo je Page1</h1>
-            <p>Ovde navigacija ima tabovepage2 i page3</p>
-           
+            <Nav tabovi={tabovi}/>
+            <h1>Ovo jePage6</h1> 
+            <p>Ovde navigacija ima tabove:page2 i page3</p>
+                  
         </div>
     )
 }
 
-export default Page1
+export default Page6
