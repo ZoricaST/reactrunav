@@ -6,12 +6,9 @@ import Page4 from './pages/Page4';
 import Page5 from './pages/Page5';
 import Page6 from './pages/Page6';
 import Nav from './components/nav';
-import { useState} from 'react'
-
-
 
 function App() {
-  const [tabovi,setTabovi] = useState([
+  let tabovi =[
     {
     id:1,
     put:'page1',
@@ -42,7 +39,7 @@ function App() {
     put:'page6',
     ime:'Page6',
     }
-    ])
+    ]
     
   return (
    <div className="App">

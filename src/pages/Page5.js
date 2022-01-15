@@ -1,9 +1,8 @@
 import React from 'react';
 import Nav from '../components/nav';
-import { useState} from 'react'
 
 const Page5 = () => {
-    const [tabovi,setTabovi] = useState([
+    let tabovi = [
         {
         id:2,
         put:'page2',
@@ -19,7 +18,7 @@ const Page5 = () => {
         put:'page6',
         ime:'Page6',
         }
-        ])
+        ]
     return (
         <div>
              <Nav tabovi={tabovi}/>
